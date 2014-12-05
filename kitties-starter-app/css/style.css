@@ -1,0 +1,40 @@
+/*@import a Google Font here!*/
+
+body {
+	background: url('../images/background.png');
+	background-size: 100%;
+	font-family: 'Lobster', 'cursive';
+}
+
+#container {
+	width: 90%;
+	margin: 0 auto;
+	text-align: center;
+}
+/*being repeated, ng-repeat*/
+.dashed {
+	border: 1px dashed pink;
+	border-radius: 5px;
+	margin: 15px auto;
+	width: 90%;
+	text-align: center;
+
+}
+
+.col {
+	display: inline-block;
+	vertical-align: top;
+}
+/*blue*/
+
+.left-container, .right-container {
+	display: inline-block;
+	width: 35%;
+	background-color: #fff;
+	border: 2px solid cyan;
+	margin: 5px;
+	border-radius: 10px;
+}
+h1 {
+	
+}

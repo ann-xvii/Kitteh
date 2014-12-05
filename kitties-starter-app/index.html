@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html ng-app="kittehApp">
+	<head>
+		<meta charset="utf-8">
+
+		<title>An HTML Page</title>
+
+		<!--[if lt IE 9]>
+		<script src="js/html5shiv.js"></script>
+		<![endif]-->
+
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+		<script src="js/angular.js"></script>
+		<script src="js/app.js"></script>
+		<script src="js/KittiesController.js"></script>
+	</head>
+
+	<body ng-controller="KittiesController as kitteh">
+		{{ kitteh.test }}
+		{{ 6 * 9}}
+		<div id="container">
+
+			<section class="left-container col">
+				<h1>Kitties for Adoption</h1>
+				<figure class="dashed" ng-repeat="meow in kitteh.kittyList | filter: false  ">
+					<h3>My name is {{ meow.catName }}</h3>
+					<p>I am {{ meow.monthsOld }} months old.</p>
+					<p>I am a {{ meow.gender }}.</p>
+					<img src="{{ meow.image }}"><br>
+					<label>Adopt?</label>
+					<input type="checkbox" ng-model="meow.adopted" ng-class="meow.adopted ? 'right-container' : 'left-container'">
+				</figure>
+			</section>
+
+			<section class="right-container col">
+				<h1>At their forever homes &#60;3 </h1>
+				<figure class="dashed" ng-repeat="meow in kitteh.kittyList | filter: true  ">
+					<h3>My name is {{ meow.catName }}</h3>
+					<p>I am {{ meow.monthsOld }} months old.</p>
+					<p>I am a {{ meow.gender }}.</p>
+					<img src="{{ meow.image }}"><br>
+					<label>Adopt?</label>
+					<input type="checkbox" ng-model="meow.adopted" ng-class="meow.adopted ? 'right-container' : 'left-container'">
+				</figure>
+			</section>
+
+		</div>
+	</body>
+</html>
