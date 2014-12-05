@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #Build an Angular App from Scratch!
 
 #####Good morning, WDIers! This morning you're going to take some time to go off on your own and complete a very important quest. A quest to SAVE SOME KITTIES!
@@ -40,3 +41,7 @@
 
 
 
+=======
+Kitteh
+======
+>>>>>>> 2c4092b5baed3a2d0b7bd84d131814d8165da87d
