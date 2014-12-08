@@ -60,9 +60,18 @@ function KittiesControllerFunc(){
 		this.nombre = null;
 		this.edad = null;
 		this.gender = null;
-		// this.image = null;
-		console.log(this.image);
+		this.picture = null;
+		
 	}
 }
 
 
+// SAMPLE PICTURE LINKS: 
+
+// http://2.bp.blogspot.com/-s4e_GXBr5xY/USuOq9LYEaI/AAAAAAAAA-c/BvqQG0HyCzQ/s1600/MundoHelloKitty_Imagen_021.jpg
+
+// http://www.andrew.cmu.edu/user/cfperron/cats/images/cat8.jpg
+
+// https://i.chzbgr.com/maxW500/747434240/h2C883BBD/
+
+// http://2.bp.blogspot.com/_v7Nd6pidYeQ/S1jR2ZimYgI/AAAAAAAACUc/SuMgsHVZLiE/s400/funny-pictures-kitten-jail.jpg

@@ -29,8 +29,8 @@
 					<h3>My name is {{ meow.catName }}</h3>
 					<p>I am {{ meow.monthsOld }} months old.</p>
 					<p>I am a {{ meow.gender }}.</p>
-					<img src="{{ meow.image }}"><br>Adopt?
-					<input type="checkbox" ng-model="meow.adopted" ng-class="meow.adopted ? 'right-container' : 'left-container'">
+					<img src="{{ meow.image }}"><br><span>Adopt?</span>
+					<input type="checkbox" ng-model="meow.adopted" ng-class="meow.adopted ? 'right-container' : 'left-container'"><br/>
 					<button class="btn btn-delete" ng-click="kitteh.deleteKitty(meow)">Terminate teh Kiteh</button>
 				</figure>
 			</section>
@@ -41,8 +41,8 @@
 					<h3>My name is {{ meow.catName }}</h3>
 					<p>I am {{ meow.monthsOld }} months old.</p>
 					<p>I am a {{ meow.gender }}.</p>
-					<img src="{{ meow.image }}"><br>Adopt?
-					<input type="checkbox" ng-model="meow.adopted" ng-class="meow.adopted ? 'right-container' : 'left-container'">
+					<img src="{{ meow.image }}"><br><span>Adopt?
+					<input type="checkbox" ng-model="meow.adopted" ng-class="meow.adopted ? 'right-container' : 'left-container'"><br/></span>
 					<button class="btn btn-delete" ng-click="kitteh.deleteKitty(meow)">Terminate teh Kiteh</button>
 				</figure>
 			</section>
