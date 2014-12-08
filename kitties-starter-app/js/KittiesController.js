@@ -5,6 +5,10 @@ angular
 function KittiesControllerFunc(){
 	this.test = "This is a test. Kittehhs!!!";
 
+	this.deleteKitty = deleteKitty;
+	this.addKitty = addKitty;
+
+	var vm = this;
 	this.kittyList = [
 		{
 			catName: 'Karl',
@@ -45,6 +49,19 @@ function KittiesControllerFunc(){
 		} else if (this.adopted == false){
 			this.adopted = true;
 		}
+	}
+
+	function deleteKitty(meow){
+		vm.kittyList.splice(vm.kittyList.indexOf(meow),1);
+	}
+
+	function addKitty(){
+		vm.kittyList.push({catName: this.nombre, monthsOld: this.edad, gender: this.gender, image: this.picture, adopted: false});
+		this.nombre = null;
+		this.edad = null;
+		this.gender = null;
+		// this.image = null;
+		console.log(this.image);
 	}
 }
 
